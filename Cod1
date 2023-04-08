@@ -1,0 +1,14 @@
+Cost = 0
+Quantity_tickets = int(input('Введите количество билетов, которое хотите приобрести: '))
+for age in range(Quantity_tickets):
+    Age = int(input('Введите возвраст: '))
+    if Age < 18:
+        Cost += 0
+    elif 18 <= Age <= 25:
+        Cost += 990
+    elif Age > 25:
+        Cost += 1390
+if Quantity_tickets > 3:
+    print("Общая стоимсть, вместе со скидкой: ", Cost / 100 * 90)
+else:
+    print("Общая стоисть: ", Cost)
